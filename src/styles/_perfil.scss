@@ -1,0 +1,77 @@
+@use 'variables';
+.container__result {
+    &--di {
+        display: none;
+    }
+    display: block;
+    background-color: transparent;
+    border: 1px solid #9a9a9a;
+    box-shadow: 6px 11px 21px -3px rgba(0, 0, 0, 0.75);
+    width: 600px;
+    border-radius: 20px;
+    .result__container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column-reverse;
+        padding: 38px;
+        img {
+            border-radius: 50%;
+            width: 180px;
+            height: 180px;
+        }
+        .result__text {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            .nome__user {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding-bottom: 60px;
+                position: absolute;
+                font-size: 20px;
+                font-family: variables.$fontText;
+                text-transform: uppercase;
+                font-weight: 600;
+                letter-spacing: 1px;
+            }
+        }
+    }
+    .result {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column-reverse;
+        text-align: center;
+        padding: 70px 50px 30px;
+        font-family: variables.$fontText;
+        color: #ffffff;
+        h1 {
+            font-size: 16px;
+            font-weight: 600;
+        }
+        span {
+            font-size: 25px;
+        }
+    }
+    a {
+        background-color: #171515;
+        text-decoration: none;
+        color: #fff;
+        padding: 15px;
+        border-radius: 15px;
+        font-family: variables.$fontText;
+        font-weight: 600;
+        transition: .5s ease;
+        &:hover {
+            background: linear-gradient(338deg, rgba(9, 9, 121, 1) 10%, rgba(23, 21, 21, 1) 66%);
+        }
+    }
+    .buttonClose {
+        position: absolute;
+        margin-left: 500px;
+        margin-bottom: 400px;
+    }
+}

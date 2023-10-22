@@ -1,0 +1,12 @@
+@use 'variables';
+@use 'buscador';
+@use 'perfil';
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: variables.$bgColor !important;
+}
